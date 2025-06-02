@@ -129,6 +129,8 @@ Pelatihan dilakukan dengan strategi **transfer learning**:
 ---
 
 ## Visualisasi  
+
+<br>
 - Contoh gambar dataset
 <br>
 <br>
