@@ -53,14 +53,19 @@ Peternak ayam skala kecil dan menengah menghadapi kesulitan deteksi dini penyaki
 
 ## Implementasi Model  
 
+---
+
 ### Data Loading & Eksplorasi  
 - Dataset 4 kelas penyakit dengan resolusi dominan 224x224 piksel  
 - Data dibagi train:val:test = 80:15:15 secara stratifikasi
+
+---
 
 ### Data Augmentation  
 - Augmentasi train data (rotasi, geser, zoom, flip)  
 - Normalisasi val dan test data
 
+---
 
 ### Model  
 Eksperimen dilakukan dengan beberapa arsitektur deep learning populer untuk klasifikasi citra feses ayam, yaitu:  
@@ -85,39 +90,45 @@ Pelatihan dilakukan dengan strategi **transfer learning**:
 
 Pendekatan ini memberikan kombinasi kecepatan pelatihan, stabilitas, dan performa akurasi tinggi, dengan mitigasi overfitting yang efektif.
 
+---
+
 ### Pelatihan & Evaluasi  
 - Epochs: 25 dengan EarlyStopping  
 - Metrik: akurasi, precision, recall, f1-score  
 - Akurasi test: ~96.6%  
 - Precision, recall, f1-score rata-rata >95%  
 
+---
+
 ### Penyimpanan  
 - Model disimpan sebagai `vgg16_model.h5`
 
 ---
-### Struktur Proyek  
 
-📁 ML-Fecalguard/
-├── 📁 img/
-│   ├── a-few-img.png
-│   ├── conv-matrix.png
-│   └── evaluation-train-val.png
-├── 📁 model/
-│   ├── vgg16_model.h5
-│   ├── ResNet50_model.h5
-│   ├── DenseNet121_model.h5
-│   ├── MobileNetV2_model.h5
-│   └── CNN_model.h5
-├── 📁 notebook/
-│   ├── capstone_vgg16.ipynb
-│   ├── capstone_ResNet50.ipynb
-│   ├── capstone_DenseNet121.ipynb
-│   ├── capstone_MobileNetV2.ipynb
-│   └── capstone_CNN.ipynb
-├── .gitattributes
-├── evaluation-results.pdf
-├── README.md
-└── requirements.txt
+### Struktur Proyek  
+📁 ML-Fecalguard/</br>
+├── 📁 img/</br>
+│   ├── a-few-img.png</br>
+│   ├── conv-matrix.png</br>
+│   └── evaluation-train-val.png</br>
+├── 📁 model/</br>
+│   ├── vgg16_model.h5</br>
+│   ├── ResNet50_model.h5</br>
+│   ├── DenseNet121_model.h5</br>
+│   ├── MobileNetV2_model.h5</br>
+│   └── CNN_model.h5</br>
+├── 📁 notebook/</br>
+│   ├── capstone_vgg16.ipynb</br>
+│   ├── capstone_ResNet50.ipynb</br>
+│   ├── capstone_DenseNet121.ipynb</br>
+│   ├── capstone_MobileNetV2.ipynb</br>
+│   └── capstone_CNN.ipynb</br>
+├── .gitattributes</br>
+├── evaluation-results.pdf</br>
+├── README.md</br>
+└── requirements.txt</br></br>
+
+---
 
 ## Visualisasi  
 - Contoh gambar dataset
@@ -163,9 +174,6 @@ Pendekatan ini memberikan kombinasi kecepatan pelatihan, stabilitas, dan perform
 Selain itu, beberapa modul bawaan Python juga digunakan seperti `os`, `shutil`, `io`, `random`, dan `collections` untuk pengelolaan file, operasi sistem, dan struktur data dasar.
 
 ---
-
-
-
 
 ## Cara Menjalankan  
 1. Clone repositori dan install dependensi:  
