@@ -77,7 +77,7 @@ Eksperimen dilakukan dengan beberapa arsitektur deep learning populer untuk klas
 
 Dari hasil evaluasi performa di dataset, model **VGG16** memberikan hasil terbaik dari segi akurasi, stabilitas pelatihan, serta kemampuan generalisasi ke data validasi dan test.
 
-Model VGG16 yang gunakan adalah versi pretrained dari ImageNet, yang dipakai sebagai **base model tanpa lapisan fully connected (top layer)**. Pada base model tersebut, tambahkan beberapa layer khusus agar sesuai dengan klasifikasi 4 kelas pada proyek ini, meliputi:  
+Model VGG16 yang digunakan adalah versi pretrained dari ImageNet, yang dipakai sebagai **base model tanpa lapisan fully connected (top layer)**. Pada base model tersebut, tambahkan beberapa layer khusus agar sesuai dengan klasifikasi 4 kelas pada proyek ini, meliputi:  
 - Global Average Pooling untuk mereduksi dimensi output fitur  
 - Dense layer dengan 256, 128, dan 64 neuron beraktivasi ReLU untuk ekstraksi fitur lanjut  
 - Batch Normalization untuk menstabilkan dan mempercepat pelatihan  
@@ -87,8 +87,6 @@ Model VGG16 yang gunakan adalah versi pretrained dari ImageNet, yang dipakai seb
 Pelatihan dilakukan dengan strategi **transfer learning**:  
 - Pada tahap awal, base model VGG16 **dibekukan (freeze)** agar bobot pretrained tidak berubah, hanya layer atas yang dilatih.  
 - Setelah itu, buka (unfreeze) 20 lapisan terakhir base model untuk proses **fine-tuning** dengan learning rate kecil, guna menyesuaikan model terhadap karakteristik dataset spesifik citra feses ayam.  
-
-Pendekatan ini memberikan kombinasi kecepatan pelatihan, stabilitas, dan performa akurasi tinggi, dengan mitigasi overfitting yang efektif.
 
 ---
 
