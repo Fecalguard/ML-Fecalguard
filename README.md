@@ -121,6 +121,10 @@ Pelatihan dilakukan dengan strategi **transfer learning**:
 │   ├── capstone_DenseNet121.ipynb</br>
 │   ├── capstone_MobileNetV2.ipynb</br>
 │   └── capstone_CNN.ipynb</br>
+├── 📁 streamlit-inference/</br>
+│   ├── app.py</br>
+│   ├── requirements.txt</br>
+│   ├── Web-Screenshoot.png</br>
 ├── .gitattributes</br>
 ├── evaluation-results.pdf</br>
 ├── README.md</br>
