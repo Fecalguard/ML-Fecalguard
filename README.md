@@ -166,7 +166,7 @@ Pelatihan dilakukan dengan strategi **transfer learning**:
 | Python                          | 3.x        | Bahasa pemrograman utama                           |
 | TensorFlow                      | 2.18.0     | Framework deep learning untuk pelatihan model CNN |
 | Keras (bagian dari TensorFlow)  | 2.18.0     | API high-level untuk membangun model neural network|
-| FastAPI                 | 4.22.0     | Untuk deploy model di lingkungan JavaScript/web   |
+| FastAPI                 | 4.22.0     | Untuk deploy model di lingkungan Mobile   |
 | scikit-learn                   | 1.6.1      | Untuk evaluasi performa dan pemrosesan data       |
 | pandas                         | 2.2.2      | Manipulasi dan analisis data tabular               |
 | numpy                          | 2.0.2      | Operasi numerik dan array                           |
