@@ -14,20 +14,6 @@ Model VGG16 yang digunakan adalah versi pretrained dari ImageNet, yang dipakai s
 - Akurasi test: 96.6%  
 - Precision, recall, f1-score rata-rata >95%  
 
-## Struktur Proyek  
-📁 ML-Fecalguard/</br>
-├── 📁 model/</br>
-│   ├── vgg16_model.h5</br>
-├── 📁 notebook/</br>
-│   ├── capstone_vgg16.ipynb</br>
-├── 📁 streamlit-inference/</br>
-│   ├── app.py</br>
-│   ├── requirements.txt</br>
-│   ├── Web-Screenshoot.png</br>
-├── .gitattributes</br>
-├── README.md</br>
-└── requirements.txt</br></br>
-
 ## Cara Menjalankan  
 1. Clone repositori dan install dependensi:  
    ```bash
